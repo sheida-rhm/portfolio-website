@@ -16,72 +16,88 @@
 
   <body>
     
-      <header>
-        <div>
-            
+    <header>
+      <div class="header-container">
+
+        <img class="logo"
+        src="https://via.placeholder.com/150x50?text=Logo"
+        alt="Sheida Rahimian">
+          
+        <div class="site-menu">
           <nav>
-            <ul>
-              <li> <a href="index.html" class="black">  Work </a> </li> 
-              <li> <a href="about.html" class="black">  About </a> </li>
-              <li> <a href="#contact" class="black">  Contact </a> </li>
-            </ul>
+          <ul class="navigation">
+            <li> <a href="index.html" class="white">  Work </a> </li> 
+            <li> <a href="about.html" class="white">  About </a> </li>
+            <li> <a href="#contact" class="white">  Contact </a> </li>
+          </ul>
           </nav>
+         </div>
 
-        </div>
-      </header>
-   
+      </div>
+
+    </header>
+
      <main>
-    <div>
 
-        <div>
-            <picture>
-                <source srcset="peacelab_projpage_600w.png" media="(max-width:768px)">
-                <img src="img/peacelab/peacelab_projpage_1200w.png" width="700" alt="My Image">
+    <div class="container">
+
+        <div class="title-pic">
+            <picture class="image-width">
+                <source srcset="img/peacelab/peacelab_title_600w_5x.png" width="300" media="(max-width:768px)">
+                <img src="img/peacelab/peacelab_title_1200w_5x.png" width="400" alt="My Image">
               </picture>
         </div>
 
-        <div>
+        <div> 
+
+        <div class="project-title">
 
         <h1>Meet "PeaceLab"</h1>
 
         <p>Learn. Breathe. Grow.</p>
         <p>Thrive with PeaceLab.</p>
+        
+        </div>
 
-        <nav>
+        <div class="project-info"> <!-- OPEN 1 Row for 3 columns-->    
+        
         <ul>
-         <li>My Role</li>   
+         <li><strong>My Role</strong></li>   
          <li>UX designer</li>
          <li>UI designer</li>
         </ul>
-        </nav>
 
-        <nav>
+        
         <ul>
-        <li>Platforms</li>    
+        <li> <strong>Platforms </strong> </li>    
         <li>iOS</li>
         <li>Android</li>
         </ul>
-        </nav>
 
-        <nav>
         <ul>
-         <li>Year</li>   
+         <li> <strong>Year </strong> </li>   
          <li>2021</li>
         </ul>
-        </nav>
+  
+
+       </div> <!-- END 1 Row for 3 columns-->
+       
+       <div class="overview">
 
         <h2>OVERVIEW</h2>    
+        
         <p> PeaceLab aims at gathering like-minded people who are eager to elevate their state of mind through different mindfulness techniques aside from just meditating.</p>
         <p> The MVP focuses on finding a new feature for solving user problem that is not currently included in other meditation apps i.e. "eBook reading" group sessions.</p>
         
-
-         </div>
+       </div>
           
-        <div>
+       <div class="design-process"> <!-- OPEN Design Process -->
+
+        <div class="project-headers">
 
         <h2>PROBLEM STATEMENT</h2>
         
-        <img src="img/peacelab/problemstatement_logo.png" width="100" alt="My Image">
+        <img src="img/peacelab/problemstatement_logo.png" width="50" alt="My Image">
 
         <p>With today's chaotic and busy lives, increasing prevalence of sedentary lives is prompting individuals to adopt different mindfulness techniques as a stress relieving activity.</p>
         <p>Based on my friends' Mental Health startup, I was inspired to design a mindfulness mobile app that could help them in their research phase for the possibility of developing an app for their business. </p>
@@ -89,10 +105,11 @@
        
         </div>
 
-        <div>
+        <div class="project-headers">
+
         <h2>POSSIBLE SOLUTION</h2>
 
-        <img src="img/peacelab/solution_logo.png" width="100" alt="My Image">
+        <img src="img/peacelab/solution_logo.png" width="50" alt="My Image">
 
         <p>By studying most of the prominent mindfulness market apps including Insight Timer, Calm and Headspace I decided to work on a new feature of “eBook Reading” to my native app design project, building a new competitive advantage.</p>
 
@@ -102,11 +119,12 @@
         
         </div>
 
-        <div>
+        <div class="project-headers">
+
          <h2>DESIGN PROCESS</h2>  
 
         <div>
-         <img src="img/peacelab/designprocess_logo.png" width="100" alt="My Image">
+         <img src="img/peacelab/designprocess_logo.png" width="50" alt="My Image">
         </div>
             
          <p>Using “Design Thinking Process” method of UX design, I tried to explore alternative solutions to my problem.</p>
@@ -117,54 +135,43 @@
 
         </div>
 
-        <div>
+        <div class="project-headers">
 
-        <img src="img/peacelab/discover_phase_logo.png" width="100" alt="My Image">
+        <img src="img/peacelab/discover_phase_logo.png" width="50" alt="My Image">
 
         <h2>RESEARCH PLAN</h2>
         
-        <p>Based on <a href="https://www.factmr.com/report/3075/mindfulness-meditation-apps-market">Fact.MR</a> The market value for mindfulness meditation apps market is set to be valued at around US$ 180 Million by 2032. The market is forecasted to grow at a CAGR of 8.4% from 2022 - 2032. </p>
+        <p>Based on <a href="https://www.factmr.com/report/3075/mindfulness-meditation-apps-market" target="_blank">Fact.MR</a> The market value for mindfulness meditation apps market is set to be valued at around US$ 180 Million by 2032. The market is forecasted to grow at a CAGR of 8.4% from 2022 - 2032. </p>
         <p>COVID-19 induced stress created an inclination towards using mindfulness meditation apps. Physical exercises, breathing techniques and change in daily routine have spurred development of mindfulness mediation apps. Thus, the market will expand to be valued at over US$ 180 Mn by end of 2031.</p>
 
         </div>
 
-        <div>
+        <div class="project-headers">
          <h2>COMPETATIVE ANALYSIS</h2>   
 
+        <img class="competitors-pic" src="img/peacelab/insight-timer.png" width="90" alt="My Image">
+        <img class="competitors-pic" src="img/peacelab/calm_logo.png" width="90" alt="My Image">
+
         <p>What can I learn from others?</p> 
-        <img src="img/peacelab/insight-timer.png" width="100" alt="My Image">
-        <img src="img/peacelab/calm_logo.png" width="90" alt="My Image">
 
         <p>I proceeded by conducting a SWOT analysis of two of the most relevant meditation apps that are currently widely used out in the market: Insight Timer and Calm.</p>
-        <p>OPPORTUNITY</p>
+        <p> <strong> OPPORTUNITY </strong> </p>
         <p>From this round of exploration on most famous meditation apps, I found out that having a visually appealing UI is very important to users. Also by asking from many users of both apps, I found out that most of them prefer using a more minimal and serene interface.</p>
         <p>Based on my initial studies, I came of with these main bullet points for starting my design project:</p>
 
          </div>
 
-        <p>Minimal UI </p> 
-        <p>Professional pictures for courses</p>   
-        <p>“eBook” group reading feature </p> 
-        <p>“Journey” setting feature to stay disciplined</p>  
+        <li>Minimal UI </li> 
+        <li>Professional pictures for courses</li>   
+        <li>“eBook” group reading feature </li> 
+        <li>“Journey” setting feature to stay disciplined</li>  
 
 
-        <div>
-            <img src="img/peacelab/definephase_logo.png" width="100" alt="My Image">
 
-        <h2>PROJECT PROPOSAL</h2>
-        <p>DEFINE</p>
-       
-        </div>
-            
-         <p>WHO</p> 
-         <p> WHAT SOLUTIONS</p>
-         <p> WHEN/WHERE</p>
-         <p>OBJECTIVE</p>
-
-        <div>
+        <div class="project-headers">
           
             <div>
-            <img src="img/peacelab/prototype_logo.png" width="100" alt="My Image">
+            <img src="img/peacelab/prototype_logo.png" width="50" alt="My Image">
             </div>
 
             <h2>PROTOTYPE</h2>
@@ -172,23 +179,17 @@
             <div>
             <p>Rapid sketching</p>    
             <img src="img/peacelab/low-fidwires.png" width="400" alt="My Image">    
-            </div>
-
-            
+            </div>  
             
            <p> iOS mid-fidelity wireframes </p> 
-            <img src="img/peacelab/ios_mid-fidwires.png" width="600" alt="My Image">
+            <img src="img/peacelab/ios_mid-fidwires.png" width="200" alt="My Image">
             
-
-            
-           <p>Android mid-fidelity wireframes</p>  
-            <img src="img/peacelab/android_mid-fidwires.png" width="600"  alt="My Image">  
-           
-            
+           <p> Android mid-fidelity wireframes </p>  
+            <img src="img/peacelab/android_mid-fidwires.png" width="200"  alt="My Image">  
 
         </div>
 
-        <div>
+        <div class="project-headers">
           
             <div>
             <img src="img/peacelab/designphase_logo.png" width="100" alt="My Image">
@@ -208,28 +209,37 @@
 
          </div>
 
+         <a href="#" class="button"> Prototype </a>
 
         </div>
+
+      </div>   <!-- End Design Process -->
 
     </div>
    </main>
 
-      <!-- For the footer -->
+    <!-- For the footer -->
 
- <footer id="contact">
+    <footer id="contact" class="container">
 
-      <div>
+      <div class="footer-container">  <!-- Footer: 1 row containing 3 columns -->
 
-        <p> <strong>Contact</strong> </p>
+        <div>
+
+          <p> Site developed by <a href="index.html" class="black"> Sheida Rahimian</a>  
+          </p>
+          <p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M160.00112,152.00142a40,40,0,1,1-.00029-48.013"/></svg>. 2022 </p>
+        
+        </div>  
         
         <div>
-          
+
+          <p> <strong>Contact</strong> </p>
           <a href="sheidathedesigner@gmail.com" target="_blank" class="black"> sheidathedesigner@gmail.com </a>
 
         </div>  
 
-        <div> 
-          <!-- Social Media Layout-->
+        <div> <!-- Social Media Layout-->
 
           <p> <strong>Become Friends</strong> </p>
           
@@ -242,15 +252,9 @@
           </a>
         </div>
 
-        <div>
-        <p> Site developed by <a href="index.html" class="black"> Sheida Rahimian</a>  
-        </p>
-        <p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M160.00112,152.00142a40,40,0,1,1-.00029-48.013"/></svg>. 2022 </p>
-        </div>  
+      </div>  
 
-      </div>
-    </footer>
-
+  </footer>
   </body>
 
 </html>
