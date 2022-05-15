@@ -15,20 +15,19 @@
   </head>
 
   <body>
-
    
       <header>
-        <div>
+        <div class="header-container">
 
-          <img 
+          <img class="logo"
           src="https://via.placeholder.com/150x50?text=Logo"
           alt="Sheida Rahimian">
             
           <nav>
-            <ul>
-              <li> <a href="index.html" class="black">  Work </a> </li> 
-              <li> <a href="about.html" class="black">  About </a> </li>
-              <li> <a href="#contact" class="black">  Contact </a> </li>
+            <ul class="navigation">
+              <li> <a href="index.html" class="white">  Work </a> </li> 
+              <li> <a href="about.html" class="white">  About </a> </li>
+              <li> <a href="#contact" class="white">  Contact </a> </li>
             </ul>
           </nav>
 
@@ -38,36 +37,32 @@
    
      <main>  <!-- For the hero section -->
 
-      <div>
+      <div id="hero">
 
-       <div>
+       <div class="container">
 
-          <h1 id="intro">
-
-          <p>
-           Hi! I'm <a href="about.html"> Sheida </a> — a passionate UI/UX designer and human-loving extrovert. 
-          </p>
-          <p>
-            I'm focused on creating meaningful and easy to use experiences through the magic of design &#38 storytelling. 
-          </p>
-
-         </h1>
+          <h1>
+            
+           I'm <a href="about.html" class="sheida-red"> Sheida </a> — a human-loving extrovert focused on creating meaningful and easy to use experiences through the magic of design &#38; storytelling. 
+       
+          </h1>
           
        </div>
      
-      </div>
+      </div>  
 
       <!-- For your work/projects -->
-      <div>
+      
+      <div id="work">
 
-        <div>
+        <div class="container">
 
-            <div> <!-- Open row for holding 2 columns for project 1-->
+            <div class="row"> <!-- Open row for holding 2 columns for project 1-->
 
-                <div> <!-- Open first column (used for Project 1 mockup)-->  
+                <div class="project1-coverpic"> <!-- Open first column (used for Project 1 mockup)-->  
 
-                  <picture>
-                    <source srcset="cover_peacelab_600_5x" media="(max-width:768px)">
+                  <picture class="image-width">
+                    <source srcset="img/peacelab/cover_peacelab_600_5x.png" width="350" media="(max-width:768px)">
                     <img src="img/peacelab/cover_peacelab_1200_5x.png" width="600" alt="My Image">
                   </picture>
 
@@ -81,17 +76,17 @@
                   A mindfulness native app that aims at gathering like-minded people who are eager to elevate their state of mind through different mindfulness techniques.</p>
                   <p>Introducing the new feature of "eBook reading" group sessions.</p>
                   
-                  <a href="peacelab.html"> View Case Study </a>
+                  <a href="peacelab.html" class="button"> View Case Study </a>
 
                 </div> <!-- End second column (used fot text 1 project 1)-->
 
              </div> <!-- End row for holding 2 columns for project 1-->
 
-             <div> <!-- Open row for holding 2 columns for project 2-->
+             <div class="row"> <!-- Open row for holding 2 columns for project 2-->
 
               <div> <!--Open first column (used for project 2 mockup) -->
 
-                <picture>
+                <picture class="image-width">
                   <source srcset="http://via.placeholder.com/600x400" media="(max-width:768px)">
                   <img src="http://via.placeholder.com/1200x800" alt="My Image">
                 </picture>
@@ -105,17 +100,17 @@
                 Originated with the initial idea of combining some features of top famous weather ski apps although less comprehensive along with adding the new feature of “resort social networking” filling the competitive gap in the market. 
                 </p>
 
-                <a href="#">View Case Study</a>
+                <a href="#" class="button"> View Case Study </a>
                 
               </div> <!-- End second column (used for text 2 project 2)-->
 
              </div> <!--End row for holding 2 columns for project 2 -->
 
-             <div> <!-- Open row for holding 2 columns for project 3-->
+             <div class="row"> <!-- Open row for holding 2 columns for project 3-->
 
               <div> <!--Open first column (used for project 3 mockup) -->
 
-                <picture>
+                <picture class="image-width">
                   <source srcset="http://via.placeholder.com/600x400" media="(max-width:768px)">
                   <img src="http://via.placeholder.com/1200x800" alt="My Image">
                 </picture>
@@ -129,7 +124,7 @@
                 eCommerce beauty producuts online shop. Introducing new organic, vegan and cruelty free line.
                 </p>
 
-                <a href="#">View Case Study</a>
+                <a href="#" class="button"> View Case Study </a>
                 
               </div> <!-- End second column (used for text 2 project 3)-->
 
@@ -143,14 +138,21 @@
 
       <!-- For the footer -->
 
-    <footer id="contact">
+    <footer id="contact" class="container">
 
-      <div>
+      <div class="footer-container">
 
-        <p> <strong>Contact</strong> </p>
+        <div>
+
+          <p> Site developed by <a href="index.html" class="black"> Sheida Rahimian</a>  
+          </p>
+          <p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M160.00112,152.00142a40,40,0,1,1-.00029-48.013"/></svg>. 2022 </p>
+        
+        </div>  
         
         <div>
-          
+
+          <p> <strong>Contact</strong> </p>
           <a href="sheidathedesigner@gmail.com" target="_blank" class="black"> sheidathedesigner@gmail.com </a>
 
         </div>  
@@ -169,13 +171,8 @@
           </a>
         </div>
 
-        <div>
-        <p> Site developed by <a href="index.html" class="black"> Sheida Rahimian</a>  
-        </p>
-        <p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M160.00112,152.00142a40,40,0,1,1-.00029-48.013"/></svg>. 2022 </p>
-        </div>  
-
       </div>
+
     </footer>
   </body>
 
