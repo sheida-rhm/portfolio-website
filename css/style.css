@@ -1,33 +1,49 @@
 /*
 colors used::
 primary color (white): #fdfdfd
-secondary color (black): #000000
-secondary color (black): #f02038
+secondary color (black): #222
+secondary color (red): #f02038
 */
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #090909;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%; /* A MUST: if the page is viewed on a larger screen, the “hero” section will expand to fill the full width */
+}
 
 body {
     background-color: #fdfdfd;
     color: #222;
     font-family: 'Euclid Circular A', sans-serif;
-    font-size: 16px; /* set the font size to 16 px */
+    font-size: 16px; 
     font-weight: 400;
     line-height: 1.8em; 
 }   
 
-h1#intro {
+
+#hero h1 {
     text-align: center;
+    font-size: 49px;
+
 }
 
 h1, h2, h3, h4 {
-    line-height: 1.4;
+    line-height: 1.45em;
 }
 
-h1 { font-size: 2.75em;
+h1 { 
+    font-size: 2.75em;
     font-weight: 400
 }
 
 h2 {
-    font-size: 2.25em;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
@@ -49,6 +65,198 @@ a:hover {
     color: #f02038;
 }
 
+.white {
+        color: #fdfdfd;
+}
+
+.sheida-red {
+    color: #f02038;
+}
+
+.button {
+    display: inline-block;
+    background-color: white;
+    color: #f02038;
+    font-weight: 400px;
+    padding: 8px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.button:hover {
+    display: inline-block;
+    background-color: #f02038;
+    color: white;
+    font-weight: 400px;
+    padding: 8px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.image-width {
+    width: 100%;
+}
+
+
+/* Layout styling for index.html */
+
+
+#hero {
+    background-color: #090909;
+    ;
+    color: #fdfdfd;
+    padding: 75px 0;
+    display: inline-block;
+    width: 100%; /* A MUST: if the page is viewed on a larger screen, the “hero” section will expand to fill the full width */
+}
+
+.header-container {
+    padding:0 20px;
+    text-align: left;
+}
+
+.container {
+        padding: 0 60px; 
+}
+
+.row {
+    margin: 25px 0px; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+     padding-bottom: 25px;
+     /* border-bottom: 1px solid #d3d3d3; removed the lines */ 
+    padding-top: 70px;
+            
+}
+
+.project1-cover {
+    /* float: right;  ??? FLOATING to left & righht ?? */
+    text-align: center;
+}
+
+
+.logo {
+    max-width: 250px;
+}
+
+
+.site-menu {
+    /* ?? HOW TO CHANGE IT TO UP SAME LINE AS LOGO ?? */
+}
+
+nav > ul {
+    list-style-type: none; /* for removing the dots */
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+
+  }
+
+  nav > ul > li > a {
+    padding: 0 20px; /* top and bottom margin of 20px L&R 0*/
+    /* text-transform: uppercase; OFF */
+    font-weight: 400;
+    color: #222;
+  }
+
+  nav > ul > li > a:hover {
+      color: #f02038;
+  }
+
+  nav {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+
+/* Layout styling for FOOTER */
+
+footer {
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-container {
+    font-size: 0.9em;
+    padding: 100px 0;
+}
+
 .black {
-        color: #222;
+    color: #222;
+}
+
+
+/* Layout styling for about.html */
+
+.h1-mystory {
+    font-size: 40px;
+}
+
+.profile-pic {  
+    text-align: right;
+    padding-top: 40px;
+}
+
+
+.navigation-about {
+    list-style-type: none;
+    padding: 0; /* for removing the dots */
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.intro-mystory {
+    line-height: 2.2;
+}
+
+.skills-set {
+    display: block;
+    padding: 30px 0;    
+}
+
+.about {
+    /* display: inline-block; ?? HOW CAN WE MAKE IT INTO 2 coloumns next to each other in Desktop view?  */
+}
+
+
+/* Layout styling for peacelab.html */
+
+.project-title {
+    text-align: center;
+    line-height: 20px;
+}
+
+.project-info {
+    text-align: left;
+    display: inline-block;
+}
+
+.title-pic {
+    /* padding-top:40px; ?? Did not work?? */
+    text-align: center;
+}
+
+.overview {
+    text-align: center;
+    line-height: 30px;
+    padding-top: 35px;
+}
+
+.project-headers {
+    text-align: left;
+    line-height: 30px;
+    padding-top: 35px;
+}
+
+.competitors-pic {
+    display: inline-block;
+}
+
+.design-process {
+    font-size: 14px;
+    /* ???  <div class="design-process"> */
 }
