@@ -16,57 +16,58 @@
   
   <body>
     
-      <header>
-        <div>
-            
-          <nav>
-            <ul>
-              <li> <a href="index.html" class="black">  Work </a> </li> 
-              <li> <a href="about.html" class="black">  About </a> </li>
-              <li> <a href="#contact" class="black">  Contact </a> </li>
-            </ul>
-          </nav>
+    <header>
+      <div class="header-container">
 
-        </div>
-      </header>
-   
+        <img class="logo"
+        src="https://via.placeholder.com/150x50?text=Logo"
+        alt="Sheida Rahimian">
+          
+        <nav>
+          <ul class="navigation">
+            <li> <a href="index.html" class="white">  Work </a> </li> 
+            <li> <a href="about.html" class="white">  About </a> </li>
+            <li> <a href="#contact" class="white">  Contact </a> </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+
      <main>
 
-      <div>
+      <div class="container">
 
-        <div>
-         
-          <h1>My Story</h1>
+          <div class="about"> <!-- Row for column 1-->
 
-          <div> <!-- Row for column 1-->
-
-            <div>
-              <a href="index.html"> 
-              <img src="img/profile_pic_5x.png" width="280" alt="Sheida Rahimian">
-              </a>
+              <div class="profile-pic">
+                <a href="index.html"> 
+                <img src="img/profile_pic_5x.png" width="280" alt="Sheida Rahimian">
+                </a>
+              </div>  
              
-        <p>Hello, I'm Sheida, a passionate UI/UX designer coming from the Product Marketing Manager background. Being so in love and fascinated with the world of graphic design, colors and all the magic that comes with it from long before, I decided to change the trajectory of my career. This new path perfectly positions me to merge my analytical skills with my creative side.</p>
-        <p>What originally started as learning Adobe Illustrator at the beginning of COVID lockdowns, soon paved my way into the world of UI Design.</p>
-        <p>I strive to create engaging user experiences that people find inspiring. Learning how to combine fundamentals of interaction design, visual design, wireframing and prototyping techniques has helped me tie together design systems and finding out user-centric solutions of a problem as creatively as possible.</p>
-        <p>I'm a detail obsessed new technology lover with an eye towards product innovation.</p>
-        <p>Aside from the world of design and digital arts, one of my greatest passions in life is traveling, working out and above all … SKIING and living in the snowy mountains! Find me there!</p>
-        <p>I love meeting new people, so please feel free to <a href="#contact"> reach out. </a> </p>
+              <div class="intro-mystory">
 
-        <picture>
-          <source srcset="http://via.placeholder.com/600x400" media="(max-width:768px)">
-          <img src="http://via.placeholder.com/1200x800" alt="My Image">
-        </picture>
+                <h1 class="h1-mystory">My Story</h1>
 
-           </div> 
+              <p>Hello, I'm Sheida, a passionate UI/UX designer coming from the Product Marketing Manager background. Being so in love and fascinated with the world of graphic design, colors and all the magic that comes with it from long before, I decided to change the trajectory of my career. This new path perfectly positions me to merge my analytical skills with my creative side.</p>
+              <p>What originally started as learning Adobe Illustrator at the beginning of COVID lockdowns, soon paved my way into the world of UI Design.</p>
+              <p>I strive to create engaging user experiences that people find inspiring. Learning how to combine fundamentals of interaction design, visual design, wireframing and prototyping techniques has helped me tie together design systems and finding out user-centric solutions of a problem as creatively as possible.</p>
+              <p>I'm a detail obsessed new technology lover with an eye towards product innovation.</p>
+              <p>Aside from the world of design and digital arts, one of my greatest passions in life is traveling, working out and above all … SKIING and living in the snowy mountains! Find me there!</p>
+              <p>I love meeting new people, so please feel free to <a href="#contact"> reach out. </a> </p>
+              
+              </div>
 
-          <div> <!-- Row for column 2-->
+          </div> 
 
-            <h1>Skills &#38; Tools</h1>
+          <div class="skills-set"> <!-- Row for column 2 holding 3 columns-->
 
             <div>
               <h2>Skills</h2>
 
-              <ul>
+              <ul class="navigation-about">
                 <li>Interaction design</li>
                 <li>Visual design</li>
                 <li>Design systems</li>
@@ -80,21 +81,21 @@
             <div>
               <h2>Tools</h2>
 
-              <ul>
+              <ul class="navigation-about">
                 <li>Sketch</li>
                 <li>InVision Studio</li>
                 <li>Adobe Illustrator</li>
                 <li>Adobe Photoshop</li>
-                <li>Marvel</li>
                 <li>Visual Studio Code</li>
                 <li>GitHub</li>
+                <li>Webflow</li>
               </ul>
             </div>
 
             <div>
               <h2>Technology</h2>
 
-              <ul>
+              <ul class="navigation-about">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -103,31 +104,32 @@
 
           </div>
 
-
-          </div>
-
-        </div>
-
       </div>
     
      </main>
 
-      <!-- For the footer -->
+     <!-- For the footer -->
 
-   <footer id="contact">
+    <footer id="contact" class="container">
 
-      <div>
+      <div class="footer-container">  <!-- Footer: 1 row containing 3 columns -->
 
-        <p> <strong>Contact</strong> </p>
+        <div>
+
+          <p> Site developed by <a href="index.html" class="black"> Sheida Rahimian</a>  
+          </p>
+          <p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M160.00112,152.00142a40,40,0,1,1-.00029-48.013"/></svg>. 2022 </p>
+        
+        </div>  
         
         <div>
-          
+
+          <p> <strong>Contact</strong> </p>
           <a href="sheidathedesigner@gmail.com" target="_blank" class="black"> sheidathedesigner@gmail.com </a>
 
         </div>  
 
-        <div> 
-          <!-- Social Media Layout-->
+        <div> <!-- Social Media Layout-->
 
           <p> <strong>Become Friends</strong> </p>
           
@@ -140,13 +142,8 @@
           </a>
         </div>
 
-        <div>
-        <p> Site developed by <a href="index.html" class="black"> Sheida Rahimian</a>  
-        </p>
-        <p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M160.00112,152.00142a40,40,0,1,1-.00029-48.013"/></svg>. 2022 </p>
-        </div>  
-
       </div>
+
     </footer>
 
   </body>
