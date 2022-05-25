@@ -260,3 +260,15 @@ footer {
     font-size: 14px;
     /* ???  <div class="design-process"> */
 }
+
+/* Media Queries */
+
+@media only screen and (min-width: 640px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1440px) {
+}
+
