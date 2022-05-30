@@ -98,8 +98,9 @@ a:hover {
     opacity: 0.5;
 }
 
-.image-width {      
-    width: 100%;
+.project-mockup {      
+    width: 50%;
+    text-align: center;
 }
 
 
@@ -181,7 +182,8 @@ footer {
     display: inline-block;
     background-color: #090909;
     color: #fdfdfd;
-    margin-top: 60px;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .footer-container {
@@ -192,53 +194,11 @@ footer {
 
 .black {
     color: #222;
-
-
-
-
-/* Animation */
-
-.berlin-illustration {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
 }
 
-@keyframes color-change {
-    0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-
-}
-
-.sun {
-    animation: 4s color-change infinite alternate linear;
-  }
-  
-
-  @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-  }
-
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-  }
 
 
-  @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
-  }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
-
-
-
-
-/* Layout styling for about.html */
+/* --------------- Layout styling for about.html -------------------- */
 
 .h1-mystory {
     font-size: 40px;
@@ -268,7 +228,8 @@ footer {
 
 
 
-/* Layout styling for peacelab.html */
+/* -----------  Layout styling for peacelab.html ----------*/
+
 
 .project-title {
     text-align: center;
@@ -281,7 +242,6 @@ footer {
 }
 
 .title-pic {
-    /* padding-top:40px; ?? Did not work?? */
     text-align: center;
 }
 
@@ -307,16 +267,88 @@ footer {
 }
 
 
+.peacelab-container {
+    padding: 20px 20px;
+}
 
-/* Media Queries */
 
-/* Medium devices (640px and larger) */
+
+
+/*-------------- Animation ------------------ */
+
+.svg-animation {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  /*single line...
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+  */
+  
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+
+/* -----------Media Queries ---------------*/
+
+
+    /* ----- float all columns left------ */
+
+    [class*="col-"] {
+        padding: 10px;
+    }
+
+
+    /* -----clear page flow -------- */
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+/* Medium screens from 640 up to 1024px; including large mobile and most tablets (640px and larger) */
 
 @media only screen and (min-width: 640px) {
 
     header {
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 20px 0 20px;
       }
 
       nav {
@@ -324,34 +356,36 @@ footer {
         float: right;
         margin-top: 4px;
       }
+
+      body {
+          font-size: 18px;
+      }
       
       #hero {
           text-align: center;
       }
       
-      #hero span {
-          display: block;
+      .intro-mystory {
+          font-size: 16px;
       }
+
 
       .col-md-6 {
           width: 50%;
-      }
-
-      [class*="col-"] {
           float: left;
-          padding-left: 10px;
-          padding-right: 10px;
+          padding-bottom: 40%;
       }
 
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
+      .project-mockup {
+          width: 100px;
+          float: left;
+      }
 
 }
 
-/* Large devices (1024px or larger) */
+
+
+/* Large screen sizes from 1024 up to 1440px; including large tablets and most laptops/desktops */
 
 @media only screen and (min-width: 1024px) {
 
@@ -360,6 +394,36 @@ footer {
         margin-left: auto;
         margin-right: auto;
       }
+
+      .col-lg-7 {
+        width: 60%;
+        float: left;
+        padding-bottom: 40px;
+      }
+
+      .col-lg-5 {
+        width: 40%;
+      }
+
+      .col-lg-8 {
+        width: 40%;
+        float: right;
+      }
+
+      #about-page .col-md-6 {
+        width: 100%;
+     }
+
+     .project-mockup {
+         width: 20px;
+     }
+
+     .skills-set {
+        display: block;
+     }
+
 }
+
+
 
 
