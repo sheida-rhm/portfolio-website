@@ -1,300 +1,220 @@
-/*
-colors used::
-primary color (white): #fdfdfd
-secondary color (black): #222
-secondary color (red): #f02038
-*/
+/*-------------------------------------------Start Section---------------------------------------------*/
 
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
     box-sizing: border-box;
-}
-
-header {
-    background-color: #090909;
-    color: #fdfdfd;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%; /* A MUST: if the page is viewed on a larger screen, the “hero” section will expand to fill the full width */
-}
-
-body {
+  }
+  
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /*default body settings*/
+  
+  body {
     background-color: #fdfdfd;
     color: #222;
     font-family: 'Euclid Circular A', sans-serif;
-    font-size: 16px; 
+    font-size: 14px; 
     font-weight: 400;
     line-height: 1.8em; 
-}   
-
-
-#hero h1 {
-    text-align: center;
-    font-size: 45px;
-
-}
-
-
-h1, h2, h3, h4 {
-    line-height: 1.45em;
-}
-
-h1 { 
+  }   
+  
+  
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  
+  h1 {
     font-size: 2.75em;
-    font-weight: 400
-}
-
-h2 {
-    font-size: 1.5em;
     font-weight: 400;
-}
-
-h3 {
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 500;
+  }
+  
+  h3 {
     font-size: 1.75em;
     font-weight: 400;
-}
-
-h4 {
+    margin-top: -8px;
+  }
+  
+  #about-page h3 { margin-top: 0;}
+  
+  h4 {
     font-size: 1.35em;
     font-weight: 400;
-}
-
-a {
+  }
+  
+  
+  /*setting images to full-width for mobile-first approach (resizing them for other media queries*/
+  img {
+    width: 100%;
+    max-height: 600px;
+  }
+  
+  /*change the default link color to your primary color (copied from your comments at the top of the document)*/
+  a {
     color: #f02038;
     text-decoration: none; /* no underliying */
-}
-a:hover {
+  }
+  a:hover {
     color: #f02038;
-}
-
-.white {
+  }
+  
+  .white {
         color: #fdfdfd;
-}
-
-.sheida-red {
-    color: #f02038;
-}
-
-.button {
+  }
+  
+  /*CSS code for the button class*/
+  
+  .button {
     display: inline-block;
     background-color: white;
     color: #f02038;
-    font-weight: 400px;
+    font-weight: 400;
+    text-decoration: none;
     padding: 8px;
     border-radius: 10px;
     border-style: solid;
     margin-top: 20px;
-    transition-duration: 0.2s;
-    transition-property:opacity;
-}
-
-.button:hover {
-    display: inline-block;
+    transition: 0.8s opacity;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+    display: inline-block;  
     background-color: #f02038;
     color: white;
     font-weight: 400px;
     padding: 8px;
     border-radius: 10px;
     border-style: solid;
-    opacity: 0.5;
-}
-
-.project-mockup {      
-    width: 50%;
+  }
+  
+  .button:active {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+  
+  
+  
+  .sheida-red {
+    color: #f02038;
+  }
+  
+  .black {
+    color: #222;
+  }
+  
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /*stye the page sections*/
+  /*style the <header> element*/
+  
+  header {
+    background-color: #090909;
+    color: #fdfdfd;
     text-align: center;
-}
-
-
-/* Layout styling for index.html */
-
-
-#hero {
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  /*style the logo*/
+  header .logo {
+    max-width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /*Navigation Styling*/
+  nav {
+    display: inline-block;
+  }
+  
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav > ul > li {
+    display: inline-block;
+  }
+  
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #4a4a4a;
+  }
+  
+  #hero {
     background-color: #090909;
     color: #fdfdfd;
     padding: 75px 0;
     display: inline-block;
     width: 100%; /* A MUST: if the page is viewed on a larger screen, the “hero” section will expand to fill the full width */
-}
-
-.header-container {
-    padding:0 20px;
-    text-align: left;
-}
-
-.container {
-        padding: 0 60px; 
-}
-
-.row {
-    margin: 25px 0px; /* 25px top and bottom, 0 left and right */
-    
-}
-
-
-#work .row {
-     padding-bottom: 25px;
-     /* border-bottom: 1px solid #d3d3d3; removed the lines */ 
-    padding-top: 70px;
-            
-}
-
-
-.logo {
-    max-width: 250px;
-}
-
-
-.site-menu {
-    /* ?? HOW TO CHANGE IT TO UP SAME LINE AS LOGO ?? */
-}
-
-nav > ul {
-    list-style-type: none; /* for removing the dots */
-    padding: 0;
-  }
-
-  nav > ul > li {
-    display: inline-block;
-
-  }
-
-  nav > ul > li > a {
-    padding: 0 20px; /* top and bottom margin of 20px L&R 0*/
-    /* text-transform: uppercase; OFF */
-    font-weight: 400;
-    color: #222;
-  }
-
-  nav > ul > li > a:hover {
-      color: #f02038;
-  }
-
-  nav {
-    display: inline-block;
-    width: 100%;
-    text-align: right;
-}
-
-
-/* Layout styling for FOOTER */
-
-footer {
-    width: 100%;
-    display: inline-block;
-    background-color: #090909;
-    color: #fdfdfd;
-    margin-top: 20px;
-    font-size: 14px;
-}
-
-.footer-container {
-    font-size: 0.9em;
-    padding: 100px 0;
-}
-
-
-.black {
-    color: #222;
-}
-
-
-.footer-icon {
-    width: 20px;
-    height: 20px;
-}
-
-
-/* --------------- Layout styling for about.html -------------------- */
-
-.h1-mystory {
-    font-size: 40px;
-}
-
-.profile-pic {  
     text-align: center;
-    padding top: 50px;
-}
-
-
-.navigation-about {
-    list-style-type: none;
-    padding: 0; /* for removing the dots */
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.intro-mystory {
-    line-height: 2.2;
-}
-
-.skills-set {
+  }
+  
+  #hero span {
     display: block;
-    padding: 30px 0;    
-}
-
-
-
-/* -----------  Layout styling for peacelab.html ----------*/
-
-
-.project-title {
-    text-align: center;
-    line-height: 20px;
-}
-
-.project-info {
-    text-align: left;
+  }
+  
+  #contact {
+    background-color: #f9f9f9;
+    color: #222;
+    padding: 20px;
+  }
+  
+  
+  /*Style the social icons*/
+  .social {
+    margin-left: -10px;
+  }
+  
+  .social p {
     display: inline-block;
-}
-
-.title-pic {
-    text-align: center;
-}
-
-.overview {
-    text-align: center;
-    line-height: 30px;
-    padding-top: 35px;
-}
-
-.project-headers {
-    text-align: left;
-    line-height: 30px;
-    padding-top: 35px;
-}
-
-.competitors-pic {
-    display: inline-block;
-}
-
-.design-process {
-    font-size: 14px;
-    /* ???  <div class="design-process"> */
-}
-
-
-.peacelab-container {
-    padding: 20px 20px;
-}
-
-
-
-
-/*-------------- Animation ------------------ */
-
-.svg-animation {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .social svg {
+    height: 32px;
+    width: 32px;
+  }
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /* Layout styling */
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+  
+  #work .row { padding-bottom: 20px; }
+  
+  
+  
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /*SVG anamation*/
+  .svg-animation {
     width: 100%;
     max-width: 100%;
     height: auto;
   }
-
-@keyframes color-change {
+  
+  @keyframes color-change {
     0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-
-}
-
-.sun {
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+  
+  .sun {
     animation-duration: 4s;
     animation-name: color-change;
     animation-iteration-count: infinite;
@@ -308,127 +228,132 @@ footer {
   }
   */
   
-
   @keyframes cloud-move {
     from {transform: translate(0,50px);}
     to {transform: translate(200px,50px);}
   }
-
+  
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  /*single line...
   .cloud-front {
     animation: 30s cloud-move infinite alternate linear;
   }
-
-
+  */
+  
   @keyframes cloud-move-reverse {
     from {transform: translate(446px,48px);}
     to {transform: translate(100px, 48px);}
   }
-
+  
   .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
   }
-
-
-/* -----------Media Queries ---------------*/
-
-
-    /* ----- float all columns left------ */
-
-    [class*="col-"] {
-        padding: 10px;
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /*Media Queries*/
+  
+  /*clear page flow*/
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /*float all columns left*/
+  [class*="col-"] {
+    padding: 10px;
+  }
+  
+  /* ==============================
+  Medium devices (640px and larger)
+  ================================= */
+  @media only screen and (min-width: 640px) {
+    body {
+      font-size: 18px;
     }
-
-
-    /* -----clear page flow -------- */
-    
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-/* Medium screens from 640 up to 1024px; including large mobile and most tablets (640px and larger) */
-
-@media only screen and (min-width: 640px) {
-
+      
     header {
-        text-align: unset;
-        padding: 20px 0 20px;
-      }
-
-      nav {
-        width: auto;
-        float: right;
-        margin-top: 4px;
-      }
-
-      body {
-          font-size: 18px;
-      }
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  
+    nav {
+      width: auto;
+      float: right;
+    }
       
-      #hero {
-          text-align: center;
-      }
+    .col-md-6 {
+      width: 50%;
+      float: left;
+      padding-bottom: 40px;
+    }
       
-      .intro-mystory {
-          font-size: 16px;
-      }
-
-
-      .col-md-6 {
-          width: 50%;
-          float: left;
-          padding-bottom: 40%;
-      }
-
-      .project-mockup {
-          width: 100px;
-          float: left;
-      }
-
-}
-
-
-
-/* Large screen sizes from 1024 up to 1440px; including large tablets and most laptops/desktops */
-
-@media only screen and (min-width: 1024px) {
-
+  }
+  
+  
+  /* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+  @media only screen and (min-width: 1024px) {
     .container {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      
+    img {
+      width: 60%;
+      max-height: 600px;
+    }
+      
+    .col-lg-7 {
+      width: 60%;
+    }
+  
+    .col-lg-5 {
+      width: 40%;
+    }
+      
+    .col-lg-7 {
+      width: 60%;
+      float: left;
+      padding-bottom: 40px;
+    }
+    .col-lg-8 {
+      width: 40%;
+      float: right;
+    }
+      
+     #about-page .col-md-6 {
+       width: 100%;
+    }
+  }
+  
 
-      .col-lg-7 {
-        width: 60%;
-        float: left;
-        padding-bottom: 40px;
-      }
+  /* --------------------------------------------PEACELAB PROJECT----------------------------------------- */
+  /*---------------------------------------------Start Section---------------------------------------------*/
 
-      .col-lg-5 {
-        width: 40%;
-      }
+  .project-title {
+      text-align: center;
+  }
 
-      .col-lg-8 {
-        width: 40%;
-        float: right;
-      }
-
-      #about-page .col-md-6 {
-        width: 100%;
-     }
-
-     .project-mockup {
-         width: 20px;
-     }
-
-     .skills-set {
-        display: block;
-     }
-
+  .project-pic {
+    text-align: center;
+    padding-top: 20px;
 }
 
+    .project-info {
+        padding: 10px 10px;
+        text-align: center;
+    }
 
-
-
+    .no-bullets {
+        list-style-type: none;
+    }

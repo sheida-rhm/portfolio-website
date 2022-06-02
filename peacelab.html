@@ -39,10 +39,10 @@
 
      <main>
 
-    <div class="peacelab-container">
+    <div class="container">
 
-        <div class="title-pic">
-            <picture class="image-width">
+        <div class="project-pic">
+            <picture>
                 <source srcset="img/peacelab/peacelab_title_600w_5x.png" width="300" media="(max-width:768px)">
                 <img src="img/peacelab/peacelab_title_1200w_5x.png" width="400" alt="My Image">
               </picture>
@@ -61,20 +61,19 @@
 
         <div class="project-info"> <!-- OPEN 1 Row for 3 columns-->    
         
-        <ul>
+        <ul class="no-bullets">
          <li><strong>My Role</strong></li>   
          <li>UX designer</li>
          <li>UI designer</li>
         </ul>
-
         
-        <ul>
+        <ul class="no-bullets">
         <li> <strong>Platforms </strong> </li>    
         <li>iOS</li>
         <li>Android</li>
         </ul>
 
-        <ul>
+        <ul class="no-bullets">
          <li> <strong>Year </strong> </li>   
          <li>2021</li>
         </ul>
@@ -82,7 +81,7 @@
 
        </div> <!-- END 1 Row for 3 columns-->
        
-       <div class="overview">
+       <div>
 
         <h2>OVERVIEW</h2>    
         
@@ -91,13 +90,12 @@
         
        </div>
           
-       <div class="design-process"> <!-- OPEN Design Process -->
+       <div> <!-- OPEN Design Process -->
 
-        <div class="project-headers">
+        <div>
 
         <h2>PROBLEM STATEMENT</h2>
-        
-        <img src="img/peacelab/problemstatement_logo.png" width="50" alt="My Image">
+      
 
         <p>With today's chaotic and busy lives, increasing prevalence of sedentary lives is prompting individuals to adopt different mindfulness techniques as a stress relieving activity.</p>
         <p>Based on my friends' Mental Health startup, I was inspired to design a mindfulness mobile app that could help them in their research phase for the possibility of developing an app for their business. </p>
@@ -105,11 +103,9 @@
        
         </div>
 
-        <div class="project-headers">
+        <div>
 
         <h2>POSSIBLE SOLUTION</h2>
-
-        <img src="img/peacelab/solution_logo.png" width="50" alt="My Image">
 
         <p>By studying most of the prominent mindfulness market apps including Insight Timer, Calm and Headspace I decided to work on a new feature of “eBook Reading” to my native app design project, building a new competitive advantage.</p>
 
@@ -119,13 +115,11 @@
         
         </div>
 
-        <div class="project-headers">
+        <div>
 
          <h2>DESIGN PROCESS</h2>  
 
-        <div>
-         <img src="img/peacelab/designprocess_logo.png" width="50" alt="My Image">
-        </div>
+      
             
          <p>Using “Design Thinking Process” method of UX design, I tried to explore alternative solutions to my problem.</p>
 
@@ -135,9 +129,7 @@
 
         </div>
 
-        <div class="project-headers">
-
-        <img src="img/peacelab/discover_phase_logo.png" width="50" alt="My Image">
+        <div>
 
         <h2>RESEARCH PLAN</h2>
         
@@ -146,11 +138,11 @@
 
         </div>
 
-        <div class="project-headers">
+        <div>
          <h2>COMPETATIVE ANALYSIS</h2>   
 
-        <img class="competitors-pic" src="img/peacelab/insight-timer.png" width="90" alt="My Image">
-        <img class="competitors-pic" src="img/peacelab/calm_logo.png" width="90" alt="My Image">
+        <img class="competitors-pic" src="img/peacelab/insight-timer.png" alt="My Image">
+        <img class="competitors-pic" src="img/peacelab/calm_logo.png" alt="My Image">
 
         <p>What can I learn from others?</p> 
 
@@ -169,10 +161,7 @@
 
 
         <div class="project-headers">
-          
-            <div>
-            <img src="img/peacelab/prototype_logo.png" width="50" alt="My Image">
-            </div>
+        
 
             <h2>PROTOTYPE</h2>
 
@@ -191,9 +180,6 @@
 
         <div class="project-headers">
           
-            <div>
-            <img src="img/peacelab/designphase_logo.png" width="100" alt="My Image">
-            </div>
             
          <h2>OUTCOME & FINAL DESIGNS</h2>   
 
@@ -220,46 +206,30 @@
     </div>
    </main>
 
-    <!-- For the footer -->
-
-    <footer id="contact" class="container">
-
-      <div class="footer-container">  <!-- Footer: 1 row containing 3 columns -->
-
-        <div>
-
-          <p> Site developed by <a href="index.html" class="white"> Sheida Rahimian</a>  
-          </p>
-          <p> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M160.00112,152.00142a40,40,0,1,1-.00029-48.013"/></svg>. 2022 </p>
-        
-        </div>  
-        
-        <div>
-
-          <p> <strong>Contact</strong> </p>
-          <a href="sheidathedesigner@gmail.com" target="_blank" class="white"> sheidathedesigner@gmail.com </a>
-
-        </div>  
-
-        <div> <!-- Social Media Layout-->
-
-          <p> <strong>Become Friends</strong> </p>
-          
-          <li class="footer-icon">
-          <a href="https://www.linkedin.com/in/sheidarahimian/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 40"><path fill="#000" fill-rule="evenodd" d="M746 305h-9.725v-14.062c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V305h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526 6.095 0 10.884 3.908 10.884 12.325V305zm-38.82-30.572h-.063c-3.104 0-5.117-2.077-5.117-4.71 0-2.684 2.072-4.718 5.239-4.718 3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V305h-8.576v-27.173z" transform="translate(-702 -265)"/></svg>
-          </a> 
-      
-          <a href="https://www.behance.net/sheidarhm" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="m 1617,408.925 -447.125,0 0,108.5 447.125,0 0,-108.5 z m -220.5,372.75 q -78.75,0 -127.75,45.9375 -49,45.9375 -54.25,124.6875 l 357,0 q -15.75,-170.625 -175,-170.625 z m 14,511.875 q 55.125,0 106.75,-28 51.625,-28 66.5,-76.125 l 193.375,0 q -87.5,268.625 -373.625,268.625 -187.25,0 -297.9375,-115.5 -110.6875,-115.5 -110.6875,-303.625 0,-182 114.1875,-302.3125 Q 1223.25,616.3 1403.5,616.3 q 120.75,0 210.4375,59.5 89.6875,59.5 133.875,156.625 44.1875,97.125 44.1875,217 0,14.875 -1.75,41.125 l -575.75,0 q 0,97.125 50.3125,150.0625 50.3125,52.9375 145.6875,52.9375 z m -1168.125,-43.75 259,0 q 179.375,0 179.375,-146.125 0,-157.5 -174.125,-157.5 l -264.25,0 0,303.625 z m 0,-469.875 245.875,0 q 68.25,0 108.0625,-31.9375 39.8125,-31.9375 39.8125,-99.3125 0,-126 -166.25,-126 l -227.5,0 0,257.25 z M 0,334.55 l 519.75,0 q 76.125,0 135.625,12.25 59.5,12.25 110.6875,41.5625 51.1875,29.3125 78.75,84.4375 27.5625,55.125 27.5625,134.75 0,158.375 -150.5,230.125 99.75,28 150.5,100.625 50.75,72.625 50.75,178.5 0,65.625 -21.4375,119.4375 -21.4375,53.8125 -57.75,90.5625 -36.3125,36.75 -86.1875,62.125 -49.875,25.375 -105.875,36.75 -56,11.375 -117.25,11.375 L 0,1437.05 0,334.55 Z"/></svg>
-          </a>
-          </li>
-
-        </div>
-
-      </div>  
-
-  </footer>
+    <!-- For the footer  -->
+    <footer id="contact" style="clear: both;">
+      <div class="container">
+              <h2>Get in touch</h2>
+              <p>Do you like my work and want to discuss opportunities? Please get in touch.</p> 
+              <p>Contact: <a href="mailto:sheidathedesigner@gmail.com" class="black"><u>sheidathedesigner@gmail.com</u> </a></p>
+              <h4>Become friends</h4>
+              <div class="social">
+              <!--Social Media Layout and Placeholders-->
+              <!--For students, the images below should be updated with real svgs and links should be updated-->
+                  <p>
+                      <a href="https://www.linkedin.com/in/sheidarahimian/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 40"><path fill="#000" fill-rule="evenodd" d="M746 305h-9.725v-14.062c0-3.68-1.52-6.193-4.866-6.193-2.558 0-3.981 1.696-4.643 3.33-.249.586-.21 1.403-.21 2.22V305h-9.634s.124-24.909 0-27.173h9.634v4.265c.57-1.865 3.648-4.526 8.56-4.526 6.095 0 10.884 3.908 10.884 12.325V305zm-38.82-30.572h-.063c-3.104 0-5.117-2.077-5.117-4.71 0-2.684 2.072-4.718 5.239-4.718 3.164 0 5.11 2.029 5.171 4.71 0 2.633-2.007 4.718-5.23 4.718zm-4.07 3.399h8.576V305h-8.576v-27.173z" transform="translate(-702 -265)"/></svg>
+                      </a> 
+                  </p>
+                  <p>
+                      <a href="https://www.behance.net/sheidarhm" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="m 1617,408.925 -447.125,0 0,108.5 447.125,0 0,-108.5 z m -220.5,372.75 q -78.75,0 -127.75,45.9375 -49,45.9375 -54.25,124.6875 l 357,0 q -15.75,-170.625 -175,-170.625 z m 14,511.875 q 55.125,0 106.75,-28 51.625,-28 66.5,-76.125 l 193.375,0 q -87.5,268.625 -373.625,268.625 -187.25,0 -297.9375,-115.5 -110.6875,-115.5 -110.6875,-303.625 0,-182 114.1875,-302.3125 Q 1223.25,616.3 1403.5,616.3 q 120.75,0 210.4375,59.5 89.6875,59.5 133.875,156.625 44.1875,97.125 44.1875,217 0,14.875 -1.75,41.125 l -575.75,0 q 0,97.125 50.3125,150.0625 50.3125,52.9375 145.6875,52.9375 z m -1168.125,-43.75 259,0 q 179.375,0 179.375,-146.125 0,-157.5 -174.125,-157.5 l -264.25,0 0,303.625 z m 0,-469.875 245.875,0 q 68.25,0 108.0625,-31.9375 39.8125,-31.9375 39.8125,-99.3125 0,-126 -166.25,-126 l -227.5,0 0,257.25 z M 0,334.55 l 519.75,0 q 76.125,0 135.625,12.25 59.5,12.25 110.6875,41.5625 51.1875,29.3125 78.75,84.4375 27.5625,55.125 27.5625,134.75 0,158.375 -150.5,230.125 99.75,28 150.5,100.625 50.75,72.625 50.75,178.5 0,65.625 -21.4375,119.4375 -21.4375,53.8125 -57.75,90.5625 -36.3125,36.75 -86.1875,62.125 -49.875,25.375 -105.875,36.75 -56,11.375 -117.25,11.375 L 0,1437.05 0,334.55 Z"/></svg>
+                      </a>
+                  </p>
+              </div>
+              <p>Site developed by ©<a href="index.html" class="black"> Sheida Rahimian</a> 2022</p>
+          </div>        
+    </footer>
   </body>
 
 </html>
