@@ -313,6 +313,15 @@
       max-height: 600px;
     }
       
+    .profile.pic {
+        width: 10%;
+        max-height: 50px;
+    }
+
+    .project-info {
+        display: inline-block;
+    }
+
     .col-lg-7 {
       width: 60%;
     }
@@ -334,6 +343,12 @@
      #about-page .col-md-6 {
        width: 100%;
     }
+    
+    #about-page picture img {
+      width: 30%;
+      float: right;
+  }
+
   }
   
 
@@ -349,11 +364,15 @@
     padding-top: 20px;
 }
 
-    .project-info {
+    .project-info { 
         padding: 10px 10px;
         text-align: center;
     }
 
     .no-bullets {
         list-style-type: none;
+    }
+
+    .project-headers {
+        padding-bottom: 50px;
     }
