@@ -98,7 +98,6 @@
   }
   
   
-  
   .sheida-red {
     color: #f02038;
   }
@@ -110,37 +109,71 @@
   /*--------------------------------------------End Section---------------------------------------------*/
   /*-------------------------------------------Start Section---------------------------------------------*/
   /*stye the page sections*/
+
   /*style the <header> element*/
   
   header {
     background-color: #090909;
     color: #fdfdfd;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
+    display: inline-block;
+    padding: 12px 0 4px 0px;
+    position: fixed;
+    width: 100%;
   }
   
   /*style the logo*/
+
   header .logo {
-    max-width: 250px;
+    max-width: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
   
-  /*Navigation Styling*/
-  nav {
-    display: inline-block;
-  }
-  
+  /* -------- Navigation Styling --------- */
+
+
   nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
   
-  nav > ul > li {
-    display: inline-block;
+
+  /* --- Hide all the list elements except for the hamburger menu icon */
+
+  .navtoggle li:not(:last-child) {
+    display: none;
   }
   
+
+  /* Menu bar's position is relative to the logo. "navtoggle.responsive" is a new class for later javascript work */
+
+  /* Postion of the menu icon in relationship to the header */
+
+  .navtoggle, 
+  .navtoggle.responsive {
+    position: relative;
+  }
+
+
+  /* block value: when the .responsive class is toggled, it will override our previous code and show the complete menu */
+
+  .navtoggle.responsive li  {
+    display: block;
+  }
+
+  /* Hambergur menu icon styling */
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    font-size: 24px;
+    padding-right: 10px;
+    color: #fdfdfd;
+  }
+
+
   nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
@@ -288,13 +321,35 @@
       width: auto;
       float: right;
     }
+
+    /* Removed header margin from mobile base code, yet still want those margins on your larger screens so added here again */
+
+    nav > ul {
+      margin: 1em 0;
+    }
       
     .col-md-6 {
       width: 50%;
       float: left;
       padding-bottom: 40px;
     }
+
+    nav > ul > li {
+      display: inline-block;
+    }
       
+    /* Maintaining the navigation elements on Tablet */
+
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+    
+     /* Removing the hamburger icon */
+     
+    .navtoggle li:last-child {
+      display: none;
+    }
+
   }
   
   
@@ -349,6 +404,10 @@
       float: right;
   }
 
+  .skills-tools {
+    padding-left: 100px;
+  }
+
   }
   
 
@@ -376,3 +435,5 @@
     .project-headers {
         padding-bottom: 50px;
     }
+
+      /*---------------------------------------------END Section---------------------------------------------*/

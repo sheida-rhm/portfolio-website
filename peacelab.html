@@ -12,31 +12,34 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <!--CDN code for fontawesome hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
+  
   </head>
 
   <body>
     
+    <!-- For the header -->
     <header>
-      <div class="header-container">
-
-        <img class="logo"
-        src="https://via.placeholder.com/150x50?text=Logo"
-        alt="Sheida Rahimian">
-          
-        <div class="site-menu">
-          <nav>
-          <ul class="navigation">
-            <li> <a href="index.html" class="white">  Work </a> </li> 
-            <li> <a href="about.html" class="white">  About </a> </li>
-            <li> <a href="#contact" class="white">  Contact </a> </li>
-          </ul>
-          </nav>
-         </div>
-
+      <!-- For the navigation -->
+      <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+              <a href="index.html">
+              <img src="https://via.placeholder.com/150x50?text=Logo" class="logo" alt="Sheida Rahimian" >
+              </a>
+              <nav>
+                <ul class="navigation">
+                  <li class="active"><a href="index.html" class="white">Work</a></li>
+                  <li><a href="about.html" class="white">About</a></li>
+                  <li><a href="#contact" class="white" onclick="menuToggle()">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                   <!-- Hamburger menu icon -->
+                </ul>
+              </nav>
+            </div>
       </div>
-
     </header>
-
+    
      <main>
 
     <div class="container">
@@ -230,6 +233,10 @@
               <p>Site developed by ©<a href="index.html" class="black"> Sheida Rahimian</a> 2022</p>
           </div>        
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
   </body>
 
 </html>

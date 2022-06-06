@@ -10,22 +10,31 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Sheida Rahimian . About</title>
+
+     <!--CDN code for fontawesome hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
+  
   </head>
+
   <body id="about-page">
     <!-- For the header -->
 	<header>
 		<!-- For the navigation -->
 		<div class="container">
+          <div class="navtoggle" id="myNavtoggle">
             <a href="index.html">
-			 <img src="https://via.placeholder.com/150x50?text=Logo" class="logo" alt="Sheida Rahimian" >
+			      <img src="https://via.placeholder.com/150x50?text=Logo" class="logo" alt="Sheida Rahimian" >
             </a>
             <nav>
-                <ul class="navigation">
-                  <li class="active"><a href="index.html" class="white">Work</a></li>
-                  <li><a href="about.html" class="white">About</a></li>
-                  <li><a href="#contact" class="white">Contact</a></li>
-                </ul>
-              </nav>
+              <ul class="navigation">
+                <li class="active"><a href="index.html" class="white">Work</a></li>
+                <li><a href="about.html" class="white">About</a></li>
+                <li><a href="#contact" class="white" onclick="menuToggle()">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                 <!-- Hamburger menu icon -->
+              </ul>
+            </nav>
+          </div>
 		</div>
 	</header>
 
@@ -71,10 +80,10 @@
                             </p>
                             
                         </div>
-                        <div class="column col-lg-8"><!--Column two-->
+                        <div class="skills-tools column col-lg-8"><!--Column two-->
                             <h2>Skills &amp; Tools</h2>
                             <div class="column col-md-6"><!--Column two, row one-->
-                                <h3>Relevant Skills</h3>
+                                <h3>Skills</h3>
                                 <ul>
                                     <li>Interaction design</li>
                                     <li>Visual design</li>
@@ -87,7 +96,7 @@
                                 
                             </div>
                             <div class="column col-md-6"><!--Column two, row two-->
-                                <h3>Tools I use</h3>
+                                <h3>Tools</h3>
                                 <ul>
                                     <li>Sketch</li>
                                     <li>InVision Studio</li>
@@ -131,5 +140,9 @@
             <p>Site developed by ©<a href="index.html" class="black"> Sheida Rahimian</a> 2022</p>
         </div>        
 	</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
   </body>
 </html>
