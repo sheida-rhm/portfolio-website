@@ -108,13 +108,14 @@
   /*style the <header> element*/
   
   header {
-    background-color: #090909;
-    color: #fdfdfd;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #090909;
     display: inline-block;
     padding: 12px 0 4px 0px;
     position: fixed;
     width: 100%;
   }
+
   
   /*style the logo*/
 
@@ -177,9 +178,9 @@
   }
   
   #hero {
-    background-color: #090909;
-    color: #fdfdfd;
-    padding: 75px 0;
+    background-color: #fdfdfd;
+    color: #090909;
+    padding: 150px 0;
     display: inline-block;
     width: 100%; /* A MUST: if the page is viewed on a larger screen, the “hero” section will expand to fill the full width */
     text-align: center;
