@@ -335,6 +335,10 @@
       text-align: unset;
       padding: 20px 0 13px;
     }
+
+    #hero {
+      text-align: left;
+    }
   
     nav {
       width: auto;
