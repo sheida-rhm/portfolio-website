@@ -222,6 +222,12 @@
     padding: 0 15px;
   }
 
+
+  .container-about {
+    text-align: center;
+
+  }
+
   .container-contact {
     text-align: center;
   }
@@ -243,7 +249,7 @@
 
   .mywork {
     text-align: center;
-    padding: 100px 0;
+    padding-top: 70px;
   }
 
   .projects { 
