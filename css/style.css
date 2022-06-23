@@ -74,8 +74,8 @@
   .button {
     display: inline-block;
     background-color: white;
-    color: #f02038;
-    font-weight: 400;
+    color: #EB1029;
+    font-weight: 400px;
     text-decoration: none;
     padding: 8px;
     border-radius: 10px;
@@ -87,7 +87,7 @@
   .button:hover {
     opacity: 0.8;
     display: inline-block;  
-    background-color: #f02038;
+    background-color: #EB1029;
     color: white;
     font-weight: 400px;
     padding: 8px;
@@ -166,7 +166,7 @@
     top: 25px;
     font-size: 24px;
     padding-right: 10px;
-    color: #fdfdfd;
+    color: #4a4a4a;
   }
 
 
@@ -176,11 +176,11 @@
     font-weight: 400;
     color: #4a4a4a;
   }
-  
+   
   #hero {
     background-color: #fdfdfd;
     color: #090909;
-    padding: 150px 0;
+    padding-top: 150px;
     display: inline-block;
     width: 100%; /* A MUST: if the page is viewed on a larger screen, the “hero” section will expand to fill the full width */
     text-align: center;
@@ -226,7 +226,6 @@
     text-align: center;
   }
 
-
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
   }
@@ -244,7 +243,7 @@
 
   .mywork {
     text-align: center;
-    padding: 20px 0;
+    padding: 100px 0;
   }
 
   .projects { 
@@ -437,11 +436,12 @@
 
   .project-title {
       text-align: center;
+      padding-top: 50px;
   }
 
   .project-pic {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 150px;
 }
 
     .project-info { 
