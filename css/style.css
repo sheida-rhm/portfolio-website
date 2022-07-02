@@ -37,6 +37,11 @@
     font-size: 2em;
     font-weight: 400;
   }
+
+  h4 {
+    font-size: 1em;
+    font-weight: 400;
+  }
   
   #about-page h3 { 
 
@@ -256,6 +261,9 @@
     padding: 50px 0;
   }
   
+  .competitors-pic {
+    width: 30%;
+  }
 
   /*--------------------------------------------End Section---------------------------------------------*/
   /*-------------------------------------------Start Section---------------------------------------------*/
@@ -379,6 +387,14 @@
       display: none;
     }
 
+  .designprocess  {
+    text-align: center;
+  }
+
+.competitors-pic {
+  width: 10%;
+}
+
   }
   
   
@@ -452,6 +468,7 @@
   .project-pic {
     text-align: center;
     padding-top: 150px;
+    width: 85%;
 }
 
     .project-info { 
@@ -466,5 +483,24 @@
     .project-headers {
         padding-bottom: 50px;
     }
+
+
+    /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  padding-top: 50px;
+}
+
+ 
+/* Clear floats after the columns */
+.row-projectoverview:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
       /*---------------------------------------------END Section---------------------------------------------*/
