@@ -34,14 +34,10 @@
   }
   
   h3 {
-    font-size: 2em;
-    font-weight: 400;
-  }
-
-  h4 {
     font-size: 1em;
     font-weight: 400;
   }
+
   
   #about-page h3 { 
 
@@ -50,10 +46,15 @@
 
 
   footer {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
   }
   
+  .h3-footer {
+    font-size: 17px;
+    font-weight: 300;
+    font-weight: bold;
+  }
 
   /*setting images to full-width for mobile-first approach (resizing them for other media queries*/
   img {
@@ -396,6 +397,7 @@
   width: 10%;
   }
   
+
   
   /* ==============================
   Large devices (1024px or larger)
