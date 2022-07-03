@@ -14,7 +14,7 @@
     color: #222;
     font-family: 'Euclid Circular A', sans-serif;
     font-size: 14px; 
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.8em; 
   }   
   
@@ -330,6 +330,7 @@
     content: "";
     clear: both;
     display: table;
+  
   }
   
   /*float all columns left*/
@@ -393,8 +394,6 @@
 
 .competitors-pic {
   width: 10%;
-}
-
   }
   
   
@@ -485,8 +484,8 @@
     }
 
 
-    /* Create three equal columns that floats next to each other */
-.column {
+        /* Create three equal columns that floats next to each other */
+.column-project {
   float: left;
   width: 33.33%;
   padding: 10px;
@@ -495,12 +494,13 @@
   padding-top: 50px;
 }
 
- 
-/* Clear floats after the columns */
+ /* Clear floats after the columns */
 .row-projectoverview:after {
   content: "";
   display: table;
   clear: both;
 }
+
+
 
       /*---------------------------------------------END Section---------------------------------------------*/
