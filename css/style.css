@@ -105,8 +105,7 @@
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
   }
-  
-  
+
   /*--------------------------------------------End Section---------------------------------------------*/
   /*-------------------------------------------Start Section---------------------------------------------*/
   /*stye the page sections*/
@@ -126,7 +125,7 @@
   /*style the logo*/
 
   header .logo {
-    max-width: 150px;
+    max-width: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
