@@ -454,6 +454,10 @@
     
   }
 
+  .project-pic picture img {
+    width: 50%;
+  }
+
   }
   
 
@@ -468,8 +472,8 @@
   .project-pic {
     text-align: center;
     padding-top: 150px;
-    width: 80%;
 }
+
 
     .project-info { 
         padding: 10px 10px;
