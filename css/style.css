@@ -409,8 +409,8 @@
     }
       
     img {
-      width: 60%;
-      max-height: 600px;
+      width: 70%;
+      max-height: 700px;
     }
       
     .profile.pic {
@@ -454,9 +454,14 @@
     
   }
 
+    
+    /* Resizing mockup cover on the desktop viewport */
   .project-pic picture img {
     width: 50%;
   }
+
+.android-picmidfid picture img {
+  width: 80%;
 
   }
   
