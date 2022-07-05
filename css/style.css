@@ -126,7 +126,7 @@
 
   header .logo {
     max-width: 100px;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 5px;
   }
   
@@ -197,7 +197,7 @@
   }
   
   #contact {
-    background-color: #fafafa;
+    background-color: #f2f2f2;
     color: #222;
     padding: 20px;
   }
