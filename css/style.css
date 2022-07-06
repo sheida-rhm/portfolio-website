@@ -465,8 +465,12 @@
 
 .android-picmidfid picture img {
   width: 80%;
-
   }
+
+  .product-mockup {
+    text-align: center;
+  }
+
 }
 
   /* --------------------------------------------PEACELAB PROJECT----------------------------------------- */
