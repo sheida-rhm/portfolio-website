@@ -471,6 +471,11 @@
     text-align: center;
   }
 
+  .prototype-pics {
+    text-align: center;
+  }
+
+
 }
 
   /* --------------------------------------------PEACELAB PROJECT----------------------------------------- */
@@ -498,6 +503,10 @@
 
     .project-headers {
         padding-bottom: 50px;
+    }
+
+    .competative-analysis {
+      text-align: center;
     }
 
 
